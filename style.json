@@ -1,0 +1,86 @@
+{
+  "version": 8,
+  "name": "Roads of the Roman Empire",
+  "sources": {
+    "roman_roads": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/niryariv/roman_roads/refs/heads/main/all-routes.latest.geosjon"
+    }
+  },
+  "layers": [
+    {
+      "id": "roman_roads-water",
+      "type": "line",
+      "source": "roman_roads",
+      "metadata": {"IHM:overlay": true},
+      "filter": [
+        "all",
+        [
+          "in",
+          "type",
+          "River",
+          "Sea Lane"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgba(0, 0, 255, 1)",
+        "line-width": 0.4
+      }
+    },
+    {
+      "id": "roman_roads-secondary-halo",
+      "type": "line",
+      "source": "roman_roads",
+      "metadata": {"IHM:overlay": true},
+      "filter": [
+        "all",
+        ["in", "type", "Secondary Road"]
+      ],
+      "paint": {
+        "line-width": 2.5,
+        "line-color": "white"
+      }
+    },
+    {
+      "id": "roman_roads-main-halo",
+      "type": "line",
+      "source": "roman_roads",
+      "metadata": {"IHM:overlay": true},
+      "filter": [
+        "all",
+        ["in", "type", "Main Road"]
+      ],
+      "paint": {
+        "line-color": "white",
+        "line-width": 4
+      }
+    },
+    {
+      "id": "roman_roads-secondary",
+      "type": "line",
+      "source": "roman_roads",
+      "filter": [
+        "all",
+        ["in", "type", "Secondary Road"]
+      ],
+      "paint": {
+        "line-width": 1.5,
+        "line-color": "#F9AB59"
+      }
+    },
+    {
+      "id": "roman_roads-main",
+      "type": "line",
+      "source": "roman_roads",
+      "filter": [
+        "all",
+        ["in", "type", "Main Road"]
+      ],
+      "paint": {
+        "line-color": "#F9AB59",
+        "line-width": 3
+      }
+    }
+  ],
+  "id": "roman_roads"
+}
