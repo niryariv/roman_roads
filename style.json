@@ -4,7 +4,8 @@
   "sources": {
     "roman_roads": {
       "type": "geojson",
-      "data": "https://raw.githubusercontent.com/niryariv/roman_roads/refs/heads/main/all-routes.latest.geosjon"
+      "data": "https://raw.githubusercontent.com/niryariv/roman_roads/refs/heads/main/all-routes.latest.geosjon",
+      "attribution": "<a href=\"https://itiner-e.org\">Itiner-e: the digital atlas of ancient roads</a> © 2024 by Brughmans, Pažout, de Soto and Bjerregaard Vahlstrup is licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a><img src=\"https://mirrors.creativecommons.org/presskit/icons/cc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .3em;vertical-align: baseline;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/by.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .3em;vertical-align: baseline;\">"
     }
   },
   "layers": [
