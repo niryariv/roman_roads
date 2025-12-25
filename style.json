@@ -12,7 +12,6 @@
       "id": "roman_roads-water",
       "type": "line",
       "source": "roman_roads",
-      "metadata": {"IHM:overlay": true},
       "filter": [
         "all",
         [
@@ -31,7 +30,6 @@
       "id": "roman_roads-secondary-halo",
       "type": "line",
       "source": "roman_roads",
-      "metadata": {"IHM:overlay": true},
       "filter": [
         "all",
         ["in", "type", "Secondary Road"]
@@ -45,7 +43,6 @@
       "id": "roman_roads-main-halo",
       "type": "line",
       "source": "roman_roads",
-      "metadata": {"IHM:overlay": true},
       "filter": [
         "all",
         ["in", "type", "Main Road"]
